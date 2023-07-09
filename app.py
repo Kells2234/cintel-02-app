@@ -15,7 +15,7 @@ from shiny import *
 # TODO: Change the shinyswatch theme to morph, cosmo, darkly, flatly, sketchy (or other shinyswatch theme)
 # Preview at https://bootswatch.com/
 app_ui = ui.page_navbar(
-    shinyswatch.theme.darkly(),
+    shinyswatch.theme.superhero(),
     ui.nav(
         "Home",
         ui.layout_sidebar(
@@ -24,7 +24,7 @@ app_ui = ui.page_navbar(
                 ui.tags.hr(),
                 ui.h3("User Interaction Here"),
                 ui.input_text("name_input", "Enter your name", placeholder="Your Name"),
-                ui.input_text("language_input", "Enter your favorite language(s)", placeholder="Favorite Programming Language(s)"),
+                ui.input_text("color_input", "Enter your favoite color", placeholder="Favorite Color"),
                 ui.tags.hr(),
             ),
             ui.panel_main(

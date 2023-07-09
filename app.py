@@ -15,7 +15,7 @@ from shiny import *
 # TODO: Change the shinyswatch theme to morph, cosmo, darkly, flatly, sketchy (or other shinyswatch theme)
 # Preview at https://bootswatch.com/
 app_ui = ui.page_navbar(
-    shinyswatch.theme.minty(),
+    shinyswatch.theme.flatly(),
     ui.nav(
         "Home",
         ui.layout_sidebar(
@@ -35,8 +35,8 @@ app_ui = ui.page_navbar(
         ),
     ),
     # TODO: Update the links to reflect your own about, GitHub repo, and app
-    ui.nav(ui.a("About", href="https://github.com/denisecase")),
-    ui.nav(ui.a("GitHub", href="https://github.com/denisecase/cintel-02-app")),
+    ui.nav(ui.a("About", href="https://github.com/Kells2234")),
+    ui.nav(ui.a("GitHub", href="https://github.com/Kells2234/cintel-02-app")),
     ui.nav(ui.a("App", href="https://denisecase.github.io/cintel-02-app/")),
     ui.nav(ui.a("Shiny", href="https://shiny.posit.co/py/")),
     ui.nav(ui.a("Examples", href="https://shinylive.io/py/examples/")),
